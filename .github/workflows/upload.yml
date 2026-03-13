@@ -1,0 +1,16 @@
+name: Upload Song
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Upload file
+        run: |
+          echo "Song upload system ready"
